@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/bootstrap-3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilo/justified-nav.css">
+        <link rel="icon" type="image/png" href="img/icon_ed15dc96b1894098e29653f14a7f22a9.ico"/>
+        <script src="javascript/code.jquery.com_jquery-3.7.1.js"></script>
+
+        <style>
+            .navbar {
+                margin-bottom: 0;
+                border-radius: 0;
+            }
+
+            .row.content {height: 450px;}
+            
+            .sidenav {
+                padding-top: 20px;
+                background-color: #c8c8c8;
+                height: 100%;
+            }
+
+            .navbar-inverse {
+                background-color: #CCCCCC;
+                border-color: #CCCCCC;
+            }
+
+            footer {
+                background-color: #555;
+                color: white;
+                padding: 15px;
+            }
+            
+            @media screen and (max-width: 767px) {
+                .sidenav {
+                    height: auto;
+                    padding: 15px;
+                }
+                .row.content {height: auto;}
+
+            }
+
+            .quarto-details {
+                display: none   ;
+            }
+        </style>    
+        <title>Hotel Celestial</title>
+    </head>
+    <body style = "background-color:#CCCCCC;">
+       <div class="container">
+        <!-- Menu de navegação -->
+            <nav class="navbar navbar-inverse">
+                <div class="conteiner-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo_hotel.PNG" alt="Logo Hotel Celestial" width="100">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li class="active"><a href="#">Acomodações</a></li>
+                            <li><a href="contato.php">Contato</a></li>
+                            <li><a href="reservas.php">Reservas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <h2>Explore as nossas acomodações cuidadosamente projetadas para tornar a sua estadia no Hotel Celestial inesquecível.</h2> 
+            <p class="lead">Oferecemos uma variedade de quartos, desde os aconchegantes Quartos Standard até as luxuosas Suítes Presidenciais.
+            Cada acomodação combina conforto e elegância, proporcionando o cenário perfeito para uma estadia celestial.
+            Escolha a sua acomodação e prepare-se para viver uma experiência única.</p>  
+            
+            <div class="quarto">
+                <h3>Suite Standard Estrela Cadente</h3>
+                <img id="Standard" src="img/suíte_standard.jpg" alt="Suíte Standard Estrela Cadente" style="width:100%;max-width:300px">
+
+                <button class="btn btn-info mostrar-detalhes">Mostrar Detalhes</button>
+
+                <div class="quarto-details">
+                    <h4>Descrição:</h4>
+                    <p>
+                        Nossa Suíte Standard "Estrela Cadente" é o ponto de partida perfeito para uma estadia celestial.<br>
+                        Com uma decoração elegante e confortável, esta acomodação oferece uma cama queen-size luxuosa, TV de tela plana, área de estar e um banheiro privativo.<br>
+                        A atmosfera serena e as janelas amplas proporcionam uma vista deslumbrante do nosso jardim exuberante.<br>
+                    </p>
+
+                    <h4>Comodidades:</h4>
+                    <p> WiFi gratuito, ar condicionado, TV a cabo, minibar, cafeteira, banheiro com chuveiro, produtos de banho de qualidade, roupões e chinelos.</p>
+
+                    <h4>Preço:</h4>
+                    <p>A partir de R$ 250 por noite.</p>
+                 </div>
+            </div>
+
+            <div class="quarto">
+                <h3>Suíte Júnior Nebulosa Luxuosa</h3>
+                <img id="Junior" src="img/suíte_junior.jpg" alt="Suíte Júnior Nebulosa Luxuosa" style="width:100%;max-width:300px">
+
+                <button class="btn btn-info mostrar-detalhes">Mostrar Detalhes</button>
+
+                <div class="quarto-details">
+                    <h4>Descrição:</h4>
+                    <p>
+                        Nossa Suíte Júnior "Nebulosa Luxuosa" é um oásis de luxo e espaço.<br>
+                        Esta suíte espaçosa possui uma área de estar separada, uma cama king-size, banheiro de mármore com banheira de hidromassagem e varanda privativa.<br>
+                        É o refúgio ideal para casais que buscam uma experiência celestial.
+                    </p>
+
+                    <h4>Comodidades:</h4>
+                    <p>WiFi de alta velocidade, TV de tela plana, ar condicionado, minibar, banheira de hidromassagem, roupões e chinelos, cafeteira e seleção de chás e café gourmet.</p>
+
+                    <h4>Preço:</h4>
+                    <p>A partir de R$ 450 por noite.</p>
+                 </div>
+            </div>
+
+            <div class="quarto">
+                <h3>Suíte Presidencial Céu Estrelado</h3>
+                <img id="Standard" src="img/suite_presidencial.jfif" alt="Suíte Standard Estrela Cadente" style="width:100%;max-width:300px">
+
+                <button class="btn btn-info mostrar-detalhes">Mostrar Detalhes</button>
+
+                <div class="quarto-details">
+                    <h4>Descrição:</h4>
+                    <p>
+                        Nossa Suíte Presidencial "Céu Estrelado" é a personificação do luxo e requinte.<br>
+                        Esta suíte exclusiva oferece um espaçoso quarto com uma cama king-size, uma sala de estar separada, uma cozinha totalmente equipada e uma varanda privativa com vista panorâmica do oceano.<br>
+                        O banheiro de mármore dispõe de uma banheira de hidromassagem e chuveiro com efeito de chuva.
+                    </p>
+
+                    <h4>Comodidades:</h4>
+                    <p>
+                        Acesso exclusivo ao lounge VIP, WiFi de alta velocidade, TV 4K de tela plana, sistema de som premium, ar condicionado, minibar, banheira de hidromassagem, roupões e chinelos, máquina de café Nespresso.
+                    </p>
+                    <h4>Preço:</h4>
+                    <p>A partir de R$ 800 por noite.</p>
+                </div>
+            </div>
+
+            <h4><a href="reservas.php">Caso tenha gostado de alguma das nossas opções de quarto, reserve agora!</a></h4>
+        </div>  
+        <script>
+            $(document).ready(function(){
+                $(".mostrar-detalhes").click(function(){
+                    $(this).siblings(".quarto-details").slideToggle();
+                });                
+            });
+        </script>
+    </body>
+</html>
